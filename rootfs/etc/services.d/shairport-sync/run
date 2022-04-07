@@ -21,4 +21,4 @@ else
     airplay_name=$(bashio::info.hostname)
 fi
 
-exec shairport-sync -m avahi -a "$airplay_name"
+exec shairport-sync -m avahi -a "$airplay_name" -vvv
