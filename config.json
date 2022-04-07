@@ -1,6 +1,6 @@
 {
   "name": "Shairport Sync",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "slug": "shairport_sync_upgraded",
   "description": "Shairport Sync for Hass.io",
   "url": "https://github.com/szokeptr/addon-shairport-sync",
@@ -20,7 +20,8 @@
   "privileged": [],
   "audio": true,
   "map": [
-    "config:rw"
+    "config:rw",
+    "share:rw"
   ],
   "options": {
     "log_level": "info",
