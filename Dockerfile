@@ -1,4 +1,5 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.1
+ARG BUILD_ARCH
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/${BUILD_ARCH}:9.2.2
 FROM ${BUILD_FROM}
 
 ENV LANG C.UTF-8
@@ -66,7 +67,6 @@ RUN apk -U add \
 COPY rootfs /
 
 # Build arguments
-ARG BUILD_ARCH
 ARG BUILD_DATE
 ARG BUILD_REF
 ARG BUILD_VERSION
